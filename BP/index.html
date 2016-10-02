@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <head> 
+  <title>Fixed layout example with Bootstrap</title> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <!-- Bootstrap --> 
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" /> 
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen" /> 
+  <link href="css/font-awesome.min.css" rel="stylesheet" /> 
+  <link href="css/style.css" rel="stylesheet" type="text/css" /> 
+  <script src="http://code.jquery.com/jquery.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+ </head> 
+ <body> 
+  <div class="container bp-pro" style="margin-top:50px"> 
+   <div class="row"> 
+    <div class="span2"> 
+     <ul class=" bp-pro-left"> 
+      <li class="active"><a href="javascript:;"><i class="fa fa-calculator"></i>项目概述</a></li> 
+      <li><a href="javascript:;"><i class="fa fa-bar-chart"></i>市场分析</a></li> 
+      <li><a href="javascript:;"><i class="fa fa-area-chart"></i>商业模式</a></li> 
+      <li><a href="javascript:;"><i class="fa fa-random"></i>项目进展</a></li> 
+      <li><a href="javascript:;"><i class="fa fa-user"></i>核心团队</a></li> 
+     </ul> 
+    </div> 
+    <div class="span10"> 
+
+
+     <form  class="bp-pro-right clearfix"> 
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 项目名称 : </span>请用一句话说清楚你的项目是什么 
+        <b>（20字以内）</b> 
+       </div> 
+       <div class="span8 offset2"> 
+        <input class="span5" type="text" placeholder="请用一句话说清楚你的项目是什么" maxlength="20" /> 
+        <div class="help" id="help" style=" " onclick="help(this.id)"> 
+         <font>示例</font> 
+         <span style="display:none;">倍视佳激光无痛近视治疗仪</span> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 行业领域 : </span> 
+        <b>（最多填两项）</b> 
+        <div class="offset1 check"> 
+         <label class="checkbox inline" style="margin-left:10px;"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 项目进度 : </span> 选择项目进度 
+        <div class="offset1 check"> 
+         <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 产品规划中 </label> 
+         <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 产品开发中 </label> 
+         <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 产品已成型 </label> 
+         <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 已经有用户 </label> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 所在城市 : 
+	        <input  class="text_style span2"  type="hidden">
+	        <input  class="text_style span2"  type="hidden">
+        	<select class="span2" ></select>  
+            <select  class="span2"  ></select>  
+        </span> 
+       </div> 
+      </div> 
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 创立时间 : <input class="input-medium " type="text" placeholder="2014-01-01" style="margin:0"/> </span> 
+       </div> 
+      </div> 
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 团队人数 : <input class="input-medium" type="text" placeholder="20" style="margin:0" maxlength="5"/> </span> 
+       </div> 
+      </div> 
+
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 目标用户 : </span> 你们项目或产品面向的目标用户是谁？ 
+        <b>（90字以内）</b> 
+       </div> 
+       <div class="span8 offset2"> 
+        <textarea rows="3" class="span6" placeholder="你们项目或产品面向的目标用户是谁？" id="gmember" maxlength="90"  onkeyup="textlen()"></textarea> 
+        <div class="help span4" id="help1" style=" " onclick="help(this.id)"> 
+         <font>示例</font> 
+         <span style="display:none;">倍视佳激光无痛近视治疗仪</span> 
+        </div> 
+        <div class="span2"> 
+         <span class="prompt_span">已输入<font id="gmembernumber">90</font>字,剩余<font id="gmembernumber2">0</font>字</span>
+        </div> 
+       </div> 
+      </div> 
+
+      <div class="viewbox span2 offset4"><i class="fa fa-eye fa-2x"></i>预览</div>
+     </form> 
+
+     <form class="bp-pro-right clearfix"> 
+      <div class="bp-pro-right-main"> 
+       <div class="span8 offset1"> 
+        <span class="intro"> <img src="images/boss.gif" alt="" />* 项目名称 : </span>请用一句话说清楚你的项目是什么 
+        <b>（20字以内）</b> 
+       </div> 
+       <div class="span8 offset2"> 
+        <input class="span5" type="text" placeholder="Text input" /> 
+        <div class="help" id="help" style=" " onclick="help(this.id)"> 
+         <font>示例</font> 
+         <span style="display:none;">倍视佳激光无痛近视治疗仪</span> 
+        </div> 
+       </div> 
+       <div class="bp-pro-right-main"> 
+        <div class="span8 offset1"> 
+         <span class="intro"> <img src="images/boss.gif" alt="" />* 行业领域 : </span> 
+         <b>（最多填两项）</b> 
+         <div class="offset1 check"> 
+          <label class="checkbox inline" style="margin-left:10px;"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+          <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+          <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+          <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+          <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+          <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+          <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+          <label class="checkbox inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" />移动互联网 </label> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="bp-pro-right-main"> 
+        <div class="span8 offset1"> 
+         <span class="intro"> <img src="images/boss.gif" alt="" />* 行业领域 : </span> 
+         <b>（最多填两项）</b> 
+         <div class="offset1 check"> 
+          <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 产品规划中 </label> 
+          <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 产品开发中 </label> 
+          <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 产品已成型 </label> 
+          <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> 已经有用户 </label> 
+          <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> Option </label> 
+          <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> Option </label> 
+          <label class="radio inline" style="margin-left:10px;"> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> Option </label> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="viewbox span2 offset4"><i class="fa fa-eye fa-2x"></i>预览</div>
+
+     </form> 
+     <button class="btn btn-large span4 offset3 btn-primary" type="button">下一步</button> 
+    </div> 
+   </div> 
+  </div>  
+  <script src="js/index.js"></script> 
+
+ </body>
+</html>
