@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<title>Fixed layout example with Bootstrap</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css"rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/services.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<body>
+<div class="warp">
+  <div class="container">
+    <div class="row">
+      <form class="form-horizontal" method="post" name="formbase" id="formbase" action="javascript:;">
+        <div class="span12">
+          <h4 class="service-title">服务商入驻</h4>
+          <div class="affiliate-box">
+            <h4 class="service-subtitle">基础信息</h4>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">公司Logo<font color="#FF0000">*</font></label>
+              <div class="controls"> <span class="uc-file-btn"><img src="images/addphoto.jpg">
+                <input id="logoimg" name="files[]" class="uc-file" style="width: 80px;height:80px; cursor:pointer" multiple type="file">
+                </span> <img src="" id="showlogo" style="width: 80px;height:80px;display:none;"> <img src="/images/loading.gif" id="loadingimg" style="display:none;width:138px;">
+                <input name="logo" id="channel_logo" value="" type="hidden">
+                <br>
+                <br>
+                支持JPG、PNG格式，文件小于5M，建议尺寸300*300 </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">公司全称<font color="#FF0000">*</font></label>
+              <div class="controls">
+                <input maxlength="50" name="name" placeholder="公司全称" value="" class="span5" type="text">
+              </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">公司简介 <font color="#FF0000">*</font> </label>
+              <div class="controls">
+                <textarea placeholder="介绍下吧，150字以内..." name="desc" id="content" class="input-xxlarge span8"></textarea>
+              </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">公司优势</label>
+              <div class="controls">
+                <textarea style="height:120px;" placeholder="介绍下吧，500字以内..." name="advantage" class="span8"></textarea>
+              </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">典型客户</label>
+              <div class="controls">
+                <textarea style="height:120px;" placeholder="介绍下吧，500字以内..." name="cases" class="span8"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span12">
+          <div class="clear"></div>
+          <div class="affiliate-box">
+            <h4 class="service-subtitle">公司注册信息</h4>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">营业执照上传</label>
+              <div class="controls"> <span class="uc-file-btn"><img src="images/addphoto.jpg">
+                <input id="logoimg" name="files[]" class="uc-file" style="width: 80px;height:80px; cursor:pointer" multiple type="file">
+                </span> <img src="" id="showlicence" style="width: 80px;height:80px;display:none;"> <img src="/images/loading.gif" id="loadingimg" style="display:none;width:138px;">
+                <input name="logo" id="channel_logo" value="" type="hidden">
+                <br>
+                <br>
+                支持JPG、PNG格式，文件小于5M，建议尺寸300*300 </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">成立时间<font color="#FF0000">*</font></label>
+              <div class="controls">
+                <input id="setup_date" name="setup_date" readonly value="" class="laydate-icon" onclick="laydate({format: 'YYYY-MM-DD'})" type="text">
+              </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">营业执照注册号<font color="#FF0000">*</font></label>
+              <div class="controls">
+                <input maxlength="18" name="reg_no" placeholder="请填写营业执照注册号或统一社会信用代码" value="" class="span5" type="text">
+              </div>
+            </div>
+            <div class="control-group affiliate-form row" style="border:0">
+              <label style="text-align:left;" class="control-label span1" for="">公司地址<font color="#FF0000">*</font></label>
+              <div class="controls">
+                <div class="row">
+                  <div style="display:inline-block;">
+                    <select name="province" style="width:160px;">
+                      <option value="">选择省份</option>
+                      <option value="1">北京</option>
+                    </select>
+                  </div>
+                  <div style="display:inline-block">
+                    <select style="width:160px;" name="city" value="" size="1" data="">
+                      <option value="">所在城市</option>
+                    </select>
+                  </div>
+                  <div style="display:inline-block">
+                    <input maxlength="200" name="address" value="" placeholder="详细地址" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">公司网站</label>
+              <div class="controls">
+                <input maxlength="100" name="website" placeholder="公司网站" value="" class="span5" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span12">
+          <div class="clear"></div>
+          <div class="affiliate-box">
+            <h4 class="service-subtitle">联系信息</h4>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">联系人<font color="#FF0000">*</font></label>
+              <div class="controls">
+                <input maxlength="50" name="contacts" placeholder="联系人" value="" class="span5" type="text">
+              </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">联系手机<font color="#FF0000">*</font></label>
+              <div class="controls">
+                <input maxlength="50" name="contacts_phone" placeholder="联系手机" value="" class="span5" type="text">
+              </div>
+            </div>
+            <div class="control-group row">
+              <label style="text-align:left;" class="control-label span1" for="">联系邮箱<font color="#FF0000">*</font></label>
+              <div class="controls">
+                <input maxlength="50" name="contacts_email" placeholder="联系邮箱" value="" class="span5" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span12">
+          <div class="clear"></div>
+          <div class="affiliate-box">
+            <h4 class="service-subtitle">加入海创汇推荐服务商</h4>
+            <div class="row">
+              <div class="span11 offset1">
+                <input style="vertical-align:top;" name="is_recommend" id="is_recommend" value="1" type="checkbox">
+                <span style="vertical-align:middle;">&nbsp;申请成为海创汇推荐服务商</span>
+                <div class="span10" style="margin-top:10px;font-size:12px;background:#FAFAFA;line-height:18px;padding: 5px 15px 10px;">每项服务承诺按时按质量保证完成<br>
+                  与海创汇签约深度合作，可获得推荐机会</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span12" style="margin-top:20px; margin-bottom:40px;">
+          <div class="row">
+            <div class="span10 offset1">
+              <input style="vertical-align:top;" name="agree" id="agree" value="1" type="checkbox">
+              <span style="vertical-align:middle;">&nbsp;同意<a href="/page/privacy" target="_blank">《海创汇平台合作协议》</a></span> </div>
+          </div>
+        </div>
+        <div class="row">
+          <input id="status" name="status" type="hidden">
+          <button type="button" status="0" class="btn btn-hot btn-large savePro span2 offset3" style="margin-bottom:20px;">保存草稿</button>
+          <button type="button" status="1" class="btn btn-main btn-large savePro span2">提交</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
