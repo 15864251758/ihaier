@@ -1,0 +1,48 @@
+body{
+	background: #F5F5F5;
+}
+.warp {
+    margin-top: 79px;
+}
+.affiliate-box {
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.service-title {
+    font-weight: bold;
+    border-left: solid 5px #07B7EA;
+    padding-left: 10px;
+    font-size: 20px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.uc-file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 30px;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+.uc-file-btn {
+    display: inline-block;
+    zoom: 1;
+    position: relative;
+}
+.clear {
+    clear: both;
+    height: 30px;
+}
+.service-subtitle {
+    border-bottom: solid 1px #07B7EA;
+    color: #07B7EA;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
