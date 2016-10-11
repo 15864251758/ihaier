@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*block1 begin*/
+body{
+	background-color:#F5F5F5;
+	}
+li{
+	list-style:none;
+	}
+.blocktop{
+	margin: 82px auto 0;	
+}
+/*block1 begin*/
+.block1{
+	background-color:white; 
+	height:auto;
+	padding: 30px 20px 0;
+	}
+.block1-left-title {
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 28px;
+}
+.block1-left{
+	position:relative;
+	}
+.block1-left-txt {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 16px;
+}
+.block1-right{
+	float:right;
+	background:#F5F5F5;
+	padding: 0 0 30px 0;
+	margin-bottom:40px;
+	}
+.block1-right-left{
+}
+.block1-right-left .title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 30px;
+    padding: 0 30px 10px;
+    line-height: 30px;
+}
+.block1-right-left .txt{
+	padding: 0px 20px 10px;
+}
+.block1-right-right{
+	text-align:center;
+	margin-bottom:30px;
+	}
+.block1-right .btn {
+    color: white;
+    background: #0ABAED;
+    border: none;
+    margin: 46px 0 0 15px;
+    text-shadow: none;
+}
+.block1-right-right-txt {
+    padding: 5px 5px;
+    margin-top: 22px;
+}
+/*block1 end*/
+/*block2 begin*/
+.block2 {
+	background-color: white;
+	margin-top: 50px;
+	height: auto;
+	padding: 50px 20px 0;
+}
+.block2-title {
+	width: 90%;
+	margin: 0 auto;
+}
+.block2-title1 {
+	font-size: 24px;
+	font-weight: 500;
+}
+.block2-content-title1 span {
+    display: inline-block;
+    max-width: 160px;
+    overflow: hidden;
+    height: 18px;
+}
+.block2-content-title2 {
+    font-weight: bold;
+    margin: 10px 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.block2-title2 img {
+	width: 30px;
+}
+.all-row {
+	width: 90%;
+	margin: 0 auto;
+}
+.block2-content {
+	height: 350px;
+	border-radius: 0px;
+}
+.block2-content:hover {
+	border-color: #00B9EF;
+}
+.block2-content-title1 {
+	font-size: 16px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.block2-content-title1 img {
+	width: 20px;
+}
+.block2-content-txt {
+	line-height: 24px;
+	width: 88%;
+	margin: 0 auto 20px;
+	overflow: hidden;
+	height: 170px;
+}
+.block2-content-btn{
+	margin-left: 30px;
+	}
+.block2-content-btn {
+	border: 1px solid rgb(0, 185, 239);
+	color: rgb(0, 185, 239);
+	background: none;
+}
+.block2-content-btn:visited {
+    border: 1px solid rgb(0, 185, 239);
+    color: rgb(0, 185, 239);
+    background:white;
+}
+.block2-content-btn:hover {
+	border: 1px solid rgb(0, 185, 239);
+	color: rgb(0, 185, 239);
+	background: none;
+}
+.block2-right {
+	height: auto;
+	border-radius: 0px;
+	border: 2px solid rgb(141, 222, 241);
+	background-color: rgb(224, 249, 254);
+}
+.block2-right-title {
+	color: #1BB8E9;
+	padding-top: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.block2-right-txt {
+	color: #909797;
+	width: 80%;
+	margin: 0 auto;
+	height: 80px;
+	padding-top: 30px;
+	margin-bottom: -20px;
+	text-align: left;
+}
+.block2-right-btn {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+/*block2 end*/
+/*block3 begin*/
+.block3 {
+	background-color: white;
+	margin-top: 50px;
+	height: auto;
+	padding: 50px 20px 0;
+}
+.block3-title a {
+	color: black;
+	font-size: 24px;
+	font-weight: 500;
+}
+.block3-title a:hover {
+	text-decoration: none;
+}
+.block3-title .more {
+	color: black;
+	font-size: 14px;
+	font-weight: 500;
+}
+.block3-title .more:hover {
+	text-decoration: none;
+}
+.block3-content {
+	height: 370px;
+	border-radius: 0px;
+}
+.block3-content:hover {
+	border-color: #00B9EF;
+}
+.block3-content-title {
+    width: 96%;
+    margin: 20px auto;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    height: 42px;
+    overflow: hidden;
+    line-height: 28px;
+}
+.block3-content-txt {
+	line-height: 24px;
+	width: 88%;
+	margin: 0 auto 20px;
+	overflow: hidden;
+	height: 170px;
+}
+.block3-content-btn {
+	border: 1px solid rgb(0, 185, 239);
+	color: rgb(0, 185, 239);
+	background: none;
+    margin-left: 30px;
+}
+.block3-content-btn:visited {
+    border: 1px solid rgb(0, 185, 239);
+    color: rgb(0, 185, 239);
+    background: white;
+    margin-left: 30px;
+}
+.block3-content-btn:hover {
+    border: 1px solid rgb(0, 185, 239);
+    color: rgb(0, 185, 239);
+    background: white;
+    margin-left: 30px;
+}
+.block3-content-btn:hover {
+	color: rgb(0, 185, 239);
+	background: none;
+}
+body {
+	background: #F5F5F5;
+}
+.block-all-bg {
+	width: 1200px;
+	height: auto;
+	background: white;
+	margin: 0 auto;
+}
+/*block3 end*/
